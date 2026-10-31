@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { @apply bg-paper text-ink font-sans antialiased; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.card { @apply rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md hover:border-snow/40; }
+.eyebrow { @apply font-mono text-xs uppercase tracking-[0.2em] text-snow; }
+.grid-bg { background-image: linear-gradient(rgba(41,181,232,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(41,181,232,.07) 1px, transparent 1px); background-size: 40px 40px; }
